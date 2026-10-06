@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Kept in sync with TvColors.Background in ui/theme/Color.kt. -->
+    <color name="tv_background">#FF0B0D12</color>
+    <color name="tv_accent">#FF4F8DFD</color>
+</resources>

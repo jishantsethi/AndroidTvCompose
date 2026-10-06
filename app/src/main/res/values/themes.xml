@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        The XML theme only has to survive the few milliseconds between process
+        start and the first Compose frame. Everything visible afterwards comes
+        from TvTheme.kt. What matters here:
+          - NoActionBar: TV apps never show one.
+          - windowBackground: matches the Compose background so there is no
+            white flash on cold start (very visible on a slow TV SoC).
+    -->
+    <style name="Theme.AndroidTvCompose" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/tv_background</item>
+        <item name="android:colorBackground">@color/tv_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+</resources>
